@@ -4,11 +4,11 @@ namespace StorageAPI.Models;
 
 public class Product
 {
-    public int Id { get; }
-    public string Name { get; }
-    public int Price { get; }
-    public string Category { get; }
-    public string Shelf { get; }
-    public int Count { get; }
-    public string Description { get; }
+    public int Id { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public int Price { get; set; }
+    public string Category { get; set; } = string.Empty;
+    public string Shelf { get; set; } = string.Empty;
+    public int Count { get; set; }
+    public string Description { get; set; } = string.Empty;
 }
